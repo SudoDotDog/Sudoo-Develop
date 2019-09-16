@@ -1,0 +1,42 @@
+{
+  "name": "@sudoo/develop",
+  "version": "1.0.0",
+  "description": ":camera: Image Develop Queue",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudoDotDog/Sudoo-Develop.git"
+  },
+  "keywords": [
+    "Sudoo"
+  ],
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SudoDotDog/Sudoo-Develop/issues"
+  },
+  "homepage": "https://github.com/SudoDotDog/Sudoo-Develop#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@sudoo/io": "^1.6.1",
+    "@sudoo/triforce": "^1.8.3"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "require": [
+      "./test/tshook.js"
+    ],
+    "sourceMap": true
+  }
+}
